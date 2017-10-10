@@ -55,7 +55,8 @@ class Car {
   }
 
   pickUp(name) {
-    if(this.running===true && this.passengers.length < this.seats) {
+    var passCount = this.passengerCount()
+    if(this.running===true && passCount+1< this.seats) {
       console.log(`Driving to pick up ${name}`)
       this.passengers.push(name)
       return true
@@ -76,8 +77,6 @@ class Car {
   passengerCount() {
     return this.passengers.length
   }
-
-
 
 }
 
