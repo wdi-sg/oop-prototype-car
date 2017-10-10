@@ -12,14 +12,35 @@ class Car {
     this.owner = "manufacturer"
     this.running = false
     }
-
     sell(newOwner) {
+      this.previousOwners.push(this.owner)
       this.owner = newOwner
     }
     paint(newColor) {
-      this.color = newColor
+    this.color = newColor
     }
-  }
+    start() {
+      this.running = true
+    }
+    off() {
+      this.running = false
+    }
+    driveTo(destination) {
+      if (this.running === true) {
+      console.log("driving to " + destination)
+      return true
+      }
+      else return false
+    }
+    park() {
+      if (this.running === false) {
+      console.log("parked!")
+      return true
+      }
+      else return false
+    }
+}
+
 
 // export the Car class //
 // this is required for the carTest.js to load this //
