@@ -11,6 +11,8 @@ class Car {
     this.previousOwners = []
     this.owner = "manufacturer"
     this.running = false
+
+    this.passengers = []
     }
     sell(newOwner) {
       this.previousOwners.push(this.owner)
@@ -39,6 +41,33 @@ class Car {
       }
       else return false
     }
+    pickUp(name) {
+      this.passengers.push(this.owner)
+      var avaiSeats = this.seats - this.passengers.length
+        if (this.running === true && avaiSeats !== 0 ) {
+        console.log("driving to pick up " + name)
+        this.passengers.push(name)
+        return true
+      }
+      else {
+        return false
+      }
+    }
+    dropOff(name){
+      var commuterArr = this.passengers
+    if (this.running === true && this.passengers.includes(name)) {
+      console.log("driving to dropOff " + name)
+      function remove(commuterArr, name) {
+        const index = commuterArr.indexOf(name);
+        commuterArr.splice(index, 1);
+      }
+      return true
+    }
+    else return false
+  }
+  passengerCount() {
+    return this.passengers.length
+  }
 }
 
 
