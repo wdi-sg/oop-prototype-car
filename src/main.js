@@ -20,11 +20,11 @@
 // `Car` object should be able to run `paint` function,
 // and updates its existing object
 
-
 // Phase II
 
 // // Repeat the same steps to Phase I, but this time require the the class file
 // // instead of the the `carFn` file
 
+let Car = require('./Car');
 
 // Phase III
