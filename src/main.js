@@ -1,11 +1,11 @@
 // Phase I
 
 /*
-* You should make you completed
-* each task step by step. Once you're done with one `Step`
-* be sure to comment the previous console.log
-* so you don't have tornado of console.logs
-*/
+ * You should make you completed
+ * each task step by step. Once you're done with one `Step`
+ * be sure to comment the previous console.log
+ * so you don't have tornado of console.logs
+ */
 
 // // Step 0 - require / import the carFn file
 // var myCar = require('./carFn.js')

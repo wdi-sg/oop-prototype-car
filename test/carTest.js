@@ -51,14 +51,29 @@ var c1 = new Car('Honda', 'Vuzel', 2017, 'red', 7)
 
 //Phase 4
 c1.start()
-// assert.ok(c1.running, "car should be running but it is not")
+assert.ok(c1.running, "car should be running but it is not")
 // c1.off()
 // assert.ok(!c1.running, "car should be stopped but it is running")
 //Car.driveTo(destination)
-assert.ok(c1.driveTo('Orchard'), "car not running, cant drive off")
-
+// c1.driveTo('Orchard')
+// assert.ok(c1.running, "car not running, cant drive off")
+// assert.ok(c1.driveTo('Orchard'), "cant drive off")
 // c1.park()
 // assert.ok(c1.park(), "car should be parked but it is running")
 
-
 //phase 5 TO-do
+// c1.pickUp('lois')
+assert.ok(c1.running, "car not running")
+assert.ok(c1.seats > c1.passengers.length, "not enough seats!")
+assert.ok(c1.pickUp('Lois'), "it still didnt work")
+assert.ok(c1.passengers.length, "passenger didnt get added")
+success()
+
+//Car.dropOff(name)
+assert.ok(c1.passengers.includes('Lois'), "passenger " + 'Lois' + " is not in car")
+assert.ok(c1.running, "car not running")
+assert.ok(c1.dropOff('Lois'), "could not drop off")
+success()
+c1.passengerCount()
+// assert.strictEqual(typeof(c1.passengerCount()),'integer',"not an integer")
+// assert.ok(typeof(c1.passengerCount()),"no passengers")
