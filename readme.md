@@ -1,3 +1,4 @@
+
 # Prototype Body Shop
 
 The idea of this lab is to get you comfortable with Object Oriented Programming (OOP) and introduce you to Test Driven Development (TDD) in JavaScript. By the end you should be comfortable working with objects and writing prototypes.
