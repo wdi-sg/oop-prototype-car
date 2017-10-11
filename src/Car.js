@@ -15,6 +15,7 @@ class Car{
     throw Error("car can't be instantiated, required parameters are not given")
     // this.checkVariable()
   }
+}
   // checkVariable(){
   //   if (this.make === undefined || this.model === undefined || this.year === undefined || this.color === undefined || this.seats === undefined){
   //   console.log("car can't be instantiated, required parameters are not given")
