@@ -8,18 +8,28 @@
 */
 
 // // Step 0 - require / import the carFn file
+// var car = require('./carFn')
+var Car = require('./Car')
 
 // // Step 1 - Checking all properties
 // console.log the `Car` object, does it returns all the properties requested?
+var myCar = new Car()
+console.log(myCar)
 
 // // Step 2 - Run `Car.sell()` function
 // `Car` object should be able to run `sell` function,
 // and updates its existing object
-
-// // Step 3 - Run `Car.paint()` function
-// `Car` object should be able to run `paint` function,
-// and updates its existing object
-
+// console.log('old owner:', myCar.owner)
+// myCar.sell('john')
+// console.log('new owner:', myCar.owner)
+// console.log('previous owners:', myCar.previousOwners)
+//
+// // // Step 3 - Run `Car.paint()` function
+// // `Car` object should be able to run `paint` function,
+// // and updates its existing object
+// console.log(myCar.color)
+// myCar.paint('red')
+// console.log(myCar.color)
 
 // Phase II
 
