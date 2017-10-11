@@ -1,4 +1,10 @@
 // Phase I
+var Car = require('./Car')
+
+var myCar = new Car('Honda', 'Vuzel', 2017 , 'red', 7)
+console.log(myCar.paint('red'));
+
+
 
 /*
 * You should make you completed
