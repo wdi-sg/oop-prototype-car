@@ -8,9 +8,11 @@
 */
 
 // // Step 0 - require / import the carFn file
+// var Car = require("./carFn")
 
 // // Step 1 - Checking all properties
 // console.log the `Car` object, does it returns all the properties requested?
+// console.log(Car)
 
 // // Step 2 - Run `Car.sell()` function
 // `Car` object should be able to run `sell` function,
@@ -25,6 +27,10 @@
 
 // // Repeat the same steps to Phase I, but this time require the the class file
 // // instead of the the `carFn` file
-
+var Car = require("./Car")
+// var honda = new Car()
+// honda.sell('jieyinng')
+// console.log(honda);
+// honda.paint('yellow')
 
 // Phase III
