@@ -61,10 +61,10 @@ c1.paint(false)
 assert.strictEqual((typeof c1.color === 'string'), false, 'car can only be painted with real color, please input a color')
 success()
 c1.start()
-assert.strictEqual(c1.running, true, 'Constructor did not set start method')
+assert.strictEqual(c1.start(), true, 'Constructor did not set start method')
 success()
 c1.off()
-assert.strictEqual(c1.running, false, 'Constuctor did not set off method')
+assert.strictEqual(c1.off(), false, 'Constuctor did not set off method')
 // Test driveTo()
 console.log('test driving to ' + 'Test!!!');
 // Test if car is not running
