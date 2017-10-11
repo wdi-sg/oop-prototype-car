@@ -8,13 +8,15 @@
 */
 
 // // Step 0 - require / import the carFn file
-
+var Car = require('./Car')
 // // Step 1 - Checking all properties
 // console.log the `Car` object, does it returns all the properties requested?
-
+// Car.sell('shui')
+// Car.paint('blue')
 // // Step 2 - Run `Car.sell()` function
 // `Car` object should be able to run `sell` function,
 // and updates its existing object
+
 
 // // Step 3 - Run `Car.paint()` function
 // `Car` object should be able to run `paint` function,
@@ -25,6 +27,8 @@
 
 // // Repeat the same steps to Phase I, but this time require the the class file
 // // instead of the the `carFn` file
-
-
+var newCar = new Car('Honda', 'Vuzel', 2017, 'red', 7)
+newCar.make ='c2'
+var newCar = new Car('Peugot',)
+console.log(newCar)
 // Phase III
