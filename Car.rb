@@ -1,27 +1,16 @@
 class Car
-  attr_accessor :passengers
-
-  def raise_rescue
-    begin
-      raise "err"
-    end
-  end
 
   def initialize (given_make, given_model, given_year, given_color, given_seats, previous_owners = [], manufacturer = "manufacturer")
-    if !given_make
-      # raise Exception.new("foo")
-      raise_rescue
-    else
-      @make = given_make
-      @model = given_model
-      @year = given_year
-      @color = given_color
-      @seats = given_seats
-      @previous_owners = previous_owners
-      @owner = manufacturer
-      @running = false
-      # @passengers = [given_passengers]
-    end
+
+    @make = given_make
+    @model = given_model
+    @year = given_year
+    @color = given_color
+    @seats = given_seats
+    @previous_owners = previous_owners
+    @owner = manufacturer
+    @running = false
+
   end
 
   def sell(new_owner)
